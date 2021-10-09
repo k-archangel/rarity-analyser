@@ -178,10 +178,9 @@ body {
   align-items: center;
 }
 
-.header-search fieldset {
+.search fieldset {
   flex: 1;
   position: relative;
-  margin-left: 50px;
 }
 
 .search .search-text-input {
