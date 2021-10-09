@@ -12,13 +12,13 @@
     }); 
     -%>
   </head>
-  <body class="d-flex text-white bg-dark" style="min-height: 100%;">
+  <body class="d-flex text-white " style="min-height: 100%;">
     
-    <div class="container d-flex w-100 p-3 mx-auto flex-column" style="min-height: 100%; max-width: 72em;">
+    <div class="container d-flex w-100 p-3 mx-auto flex-column" style="min-height: 100%;max-width: 150em;">
       <%- include('./component/header'); -%>
       <main class="px-3" style="min-height: 100%;">
-        <h1 class="superbig upper text-center"><%= collection_name %></h1>
-        <form class="search text-center">
+        <div class="header-search search">
+          <h1 class="superbig upper text-center"><%= collection_name %></h1>
           <fieldset>
             <input class="search-text-input" type="text" name="search" placeholder="Search by ID..." value="<%= search %>">
             <button type="submit" aria-label="Search">
@@ -27,6 +27,9 @@
               </svg>
             </button>
           </fieldset>
+
+        </div>
+        <form class="search text-center">
           <footer>
             <button type="submit">Search</button>
           </footer>
